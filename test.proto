@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package test;
+
+service Test {
+  rpc ListFoos(ListFoosRequest) returns(stream Foo);
+}
+
+message ListFoosRequest {}
+
+message Foo {
+  string name = 1;
+}
