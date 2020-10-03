@@ -3,3 +3,8 @@
 source "http://rubygems.org"
 
 gem "gruf"
+
+group :development do
+  gem "pry"
+end
+
