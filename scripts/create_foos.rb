@@ -1,6 +1,6 @@
 require 'gruf'
 
-require_relative 'test_services_pb.rb'
+require_relative '../test_services_pb.rb'
 
 # Creates a new Enumerable wrapper around the client
 # streaming request object
