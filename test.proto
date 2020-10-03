@@ -4,9 +4,16 @@ package test;
 
 service Test {
   rpc ListFoos(ListFoosRequest) returns(stream Foo);
+  rpc CreateFoos(stream CreateFoosRequest) returns(EmptyResp);
 }
 
 message ListFoosRequest {}
+
+message CreateFoosRequest {
+  string name = 1;
+}
+
+message EmptyResp {}
 
 message Foo {
   string name = 1;
