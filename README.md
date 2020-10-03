@@ -29,3 +29,7 @@ foo_2
 foo_19999
 foo_20000
 ```
+
+### Additional Resources
+- [gRPC Basics - Streaming RPCs](https://grpc.io/docs/languages/ruby/basics/#streaming-rpcs)
+- [gRPC Basics: Ruby Sample Code](https://github.com/grpc/grpc/tree/v1.20.0/examples/ruby/route_guide)
