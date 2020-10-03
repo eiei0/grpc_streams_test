@@ -14,7 +14,7 @@ class TestController < ::Gruf::Controllers::Base
   end
 
   def list_foos
-    foos = 20_000.times.map { |i| Foo.new(name: "foo_#{i}") }
+    foos = 20_000.times.map { |i| Foo.new(name: "foo_#{i + 1}") }
     FooEnum.new(foos).each
   end
 end
