@@ -16,6 +16,7 @@ module Test
 
       rpc :ListFoos, ::Test::ListFoosRequest, stream(::Test::Foo)
       rpc :CreateFoos, stream(::Test::CreateFoosRequest), ::Test::EmptyResp
+      rpc :TradeFoos, stream(::Test::Foo), stream(::Test::Bar)
     end
 
     Stub = Service.rpc_stub_class

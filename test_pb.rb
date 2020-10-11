@@ -15,6 +15,10 @@ Google::Protobuf::DescriptorPool.generated_pool.build do
     add_message "test.Foo" do
       optional :name, :string, 1
     end
+    add_message "test.Bar" do
+      optional :id, :string, 1
+      optional :name, :string, 2
+    end
   end
 end
 
@@ -23,4 +27,5 @@ module Test
   CreateFoosRequest = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("test.CreateFoosRequest").msgclass
   EmptyResp = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("test.EmptyResp").msgclass
   Foo = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("test.Foo").msgclass
+  Bar = ::Google::Protobuf::DescriptorPool.generated_pool.lookup("test.Bar").msgclass
 end

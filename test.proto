@@ -5,6 +5,7 @@ package test;
 service Test {
   rpc ListFoos(ListFoosRequest) returns(stream Foo);
   rpc CreateFoos(stream CreateFoosRequest) returns(EmptyResp);
+  rpc TradeFoos(stream Foo) returns(stream Bar);
 }
 
 message ListFoosRequest {}
@@ -17,4 +18,9 @@ message EmptyResp {}
 
 message Foo {
   string name = 1;
+}
+
+message Bar {
+  string id = 1;
+  string name = 2;
 }
